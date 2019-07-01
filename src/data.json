@@ -1,0 +1,69 @@
+{
+  "isLoggingEnabled": true,
+  "requests": [
+    {
+      "id": "9894529c-97c7-4b1b-a6f3-a61d627f3ad7",
+      "type": "logic.invoke",
+      "occurredAt": "2019-04-11T20:34:12Z",
+      "duration": 147.98,
+      "mapElement": {
+        "id": "edaebc09-c38b-4ec1-bfe4-0679b39a85f1",
+        "developerName": "Send SMS"
+      },
+      "service": {
+        "id": "5c3443c1-107b-45ee-81f4-72820ae021c3",
+        "developerName": "Twilio"
+      },
+      "sourceRegion": "GB",
+      "uri": "https://services.manywho.com/api/twilio/2/sms/send"
+    },
+    {
+      "id": "a9c2f249-0301-45c2-b139-4c2cd3a935e0",
+      "type": "database.save",
+      "occurredAt": "2019-04-11T20:34:36Z",
+      "duration": 278.45,
+      "mapElement": {
+        "id": "42a50c00-5989-4dcf-be5d-d10a512ae2e9",
+        "developerName": "Save Person"
+      },
+      "service": {
+        "id": "7a62b1fe-a53c-4165-baaf-94d639111e78",
+        "developerName": "Salesforce"
+      },
+      "sourceRegion": "GB",
+      "uri": "https://salesforce.manywho.com/plugins/api/salesforce/1/data"
+    },
+    {
+      "id": "1a84cf5c-1020-4265-86b9-ae1ed38b3920",
+      "type": "database.save",
+      "occurredAt": "2019-04-11T20:34:37Z",
+      "duration": 304.35,
+      "mapElement": {
+        "id": "09d14af9-a52b-4db8-82d5-4066cd5c67c9",
+        "developerName": "Save Person"
+      },
+      "service": {
+        "id": "7a62b1fe-a53c-4165-baaf-94d639111e78",
+        "developerName": "Salesforce"
+      },
+      "sourceRegion": "GB",
+      "uri": "https://salesforce.manywho.com/plugins/api/salesforce/1/data"
+    },
+    {
+      "id": "2b2fff97-f3ed-4d12-a7c9-3fd100bf35b9",
+      "type": "database.load",
+      "occurredAt": "2019-04-11T20:34:54Z",
+      "duration": 547.23,
+      "mapElement": {
+        "id": "19d635a2-e266-4bd4-a01f-26f81d87b6ae",
+        "developerName": "Load People"
+      },
+      "service": {
+        "id": "7a62b1fe-a53c-4165-baaf-94d639111e78",
+        "developerName": "Salesforce"
+      },
+      "sourceRegion": "GB",
+      "uri": "https://salesforce.manywho.com/plugins/api/salesforce/1/data"
+    }
+  ]
+}
